@@ -15,8 +15,8 @@
     enableBulkUpdates={false}
     events={[]}
     filterBy=""
-    importedQueryDefaults={{}}
-    importedQueryInputs={{}}
+    importedQueryDefaults={{ id_input: "" }}
+    importedQueryInputs={{ id_input: "" }}
     privateParams={[]}
     query={include("./lib/Get Users from internal PG.sql", "string")}
     recordId=""

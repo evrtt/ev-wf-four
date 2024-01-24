@@ -1,1 +1,1 @@
-SELECT * FROM user_groups
+SELECT * FROM user_groups where id = {{id_input}}
