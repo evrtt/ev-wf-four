@@ -15,8 +15,8 @@
     enableBulkUpdates={false}
     events={[]}
     filterBy=""
-    importedQueryDefaults={{ id_input: "" }}
-    importedQueryInputs={{ id_input: "" }}
+    importedQueryDefaults={{ id_input: "", pageId_input: "" }}
+    importedQueryInputs={{ id_input: "", pageId_input: "" }}
     privateParams={[]}
     query={include("./lib/Get page saves from internal PG.sql", "string")}
     queryTimeout="100000"
