@@ -1,1 +1,1 @@
-SELECT * FROM page_saves WHERE id = {{id_input}}
+SELECT * FROM page_saves WHERE id = {{id_input}} AND "pageId" = {{page_id_input}}
