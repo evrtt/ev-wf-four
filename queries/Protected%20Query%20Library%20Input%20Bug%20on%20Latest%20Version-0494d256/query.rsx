@@ -1,0 +1,30 @@
+<PlaygroundQuery
+  id="Protected Query Library Input Bug on Latest Version"
+  adhocResourceType={null}
+  data={null}
+  resourceType="postgresql"
+>
+  <SqlQuery
+    actionType=""
+    allowedGroupIds={[]}
+    allowedGroups={[]}
+    bulkUpdatePrimaryKey=""
+    dataArray={[]}
+    doNotThrowOnNoOp={false}
+    editorMode="sql"
+    enableBulkUpdates={false}
+    events={[]}
+    filterBy=""
+    importedQueryDefaults={{}}
+    importedQueryInputs={{}}
+    privateParams={[]}
+    queryTimeout="100000"
+    recordId=""
+    records=""
+    retoolVersion="3.24.3"
+    showUpdateSetValueDynamicallyToggle={false}
+    tableName=""
+    updateSetValueDynamically={true}
+    watchedParams={[]}
+  />
+</PlaygroundQuery>
