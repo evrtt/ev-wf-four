@@ -15,9 +15,13 @@
     enableBulkUpdates={false}
     events={[]}
     filterBy=""
-    importedQueryDefaults={{}}
-    importedQueryInputs={{}}
+    importedQueryDefaults={{ id_input: "" }}
+    importedQueryInputs={{ id_input: "" }}
     privateParams={[]}
+    query={include(
+      "./lib/Protected Query Library Input Bug on Latest Version.sql",
+      "string"
+    )}
     queryTimeout="100000"
     recordId=""
     records=""
@@ -25,6 +29,7 @@
     showUpdateSetValueDynamicallyToggle={false}
     tableName=""
     updateSetValueDynamically={true}
+    warningCodes={[]}
     watchedParams={[]}
   />
 </PlaygroundQuery>
