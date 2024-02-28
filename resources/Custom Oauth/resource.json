@@ -1,0 +1,52 @@
+{
+  "type": "restapi",
+  "host": null,
+  "port": null,
+  "databaseName": null,
+  "databaseUsername": null,
+  "description": null,
+  "outboundRegion": null,
+  "ssl": null,
+  "editPrivilege": null,
+  "options": {
+    "baseURL": "https://httpbin.org",
+    "headers": [["", ""]],
+    "authSteps": [
+      {
+        "type": "oauth_generic",
+        "oauth2_scope": "openid profile",
+        "oauth2_auth_url": "https://accounts.google.com/o/oauth2/v2/auth",
+        "oauth2_client_id": "602467045456-p1q512go28hi4itee9lcrdqatq858aer.apps.googleusercontent.com",
+        "oauth2_callback_url": "https://ev-wf-four.retool.dev/oauth/user/oauthcallback",
+        "oauth2_access_token_url": "https://www.googleapis.com/oauth2/v4/token"
+      }
+    ],
+    "urlparams": [["", ""]],
+    "auth0_domain": "",
+    "oauth2_scope": "",
+    "auth0_clientID": "",
+    "authentication": "custom",
+    "basic_username": "",
+    "digest_username": "",
+    "oauth2_auth_url": "",
+    "cookiesToForward": [],
+    "oauth1_token_key": "",
+    "oauth2_client_id": "",
+    "forwardAllCookies": false,
+    "extraBodyKeyValues": [["", ""]],
+    "verify_session_url": "",
+    "oauth1_consumer_key": "",
+    "oauth2_callback_url": "OAUTH2_CALLBACK_URL",
+    "session_cookie_name": "",
+    "auth0_custom_audience": "",
+    "oauth1_realm_parameter": "",
+    "oauth1_signature_method": "HMAC-SHA1",
+    "oauth2_access_token_url": "",
+    "verify_session_action_enabled": false,
+    "digest_server_auth_header_response": ""
+  },
+  "environment": "production",
+  "dynamicallyQueryable": false,
+  "uuid": "41b892ee-4ef3-42ab-bf7f-d259eaf92155",
+  "toolscriptVersion": "1.0.0"
+}
