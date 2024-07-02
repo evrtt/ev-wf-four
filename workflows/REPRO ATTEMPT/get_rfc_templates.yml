@@ -1,0 +1,108 @@
+id: get_rfc_templates
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds: []
+    - streamResponse: false
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: >-
+        const results = [];
+
+        for (const [index, value] of
+        group_membership_post_processing.data.entries()) {
+          const result = get_rfc_templates_lambda.trigger();
+          results.push(result)
+        }
+
+        return await Promise.all(results)
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - workflowBlockUuid: null
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2024-02-13T15:54:09.495Z
+blockData:
+  top: 48
+  left: 2576
+  uuid: dce706ea-bc37-483f-812b-cf75bfcbb61f
+  options:
+    to: 2dc6bb9e-c069-4f8b-95e0-174879e80075
+    from: 79472101-7fcd-4582-8076-95599cca39d7
+    forEachUIType: gui
+  pluginId: get_rfc_templates
+  blockType: forEach
+  editorType: JavascriptQuery
+  onboarding: false
+  isMinimized: false
+  resourceName: JavascriptQuery
+  responsePanelState: open
+  incomingOnSuccessEdges:
+    - 79472101-7fcd-4582-8076-95599cca39d7

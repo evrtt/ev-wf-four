@@ -1,0 +1,119 @@
+id: success_return
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds: []
+    - streamResponse: false
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: |-
+        const generateReturn = () => {
+            const status = () => {
+              try {
+                return 200
+              } catch {
+                return 200
+              }
+            }
+          const body = () => {
+            try {
+              return combine_all_templates.data
+            } catch {
+              return {'error': true, 'messsage': 'there was a problem parsing the JSON body of success_return'}
+            }
+          }
+          return {status: status(), body: body() }
+          }
+          return generateReturn()
+          
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - workflowBlockUuid: null
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2024-02-13T16:02:56.123Z
+blockData:
+  top: 48
+  left: 4448
+  uuid: 01afe5c3-1c0b-4bf7-b3b8-6cf660726ded
+  options:
+    body: combine_all_templates.data
+    status: '200'
+  pluginId: success_return
+  blockType: webhookReturn
+  editorType: JavascriptQuery
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts:
+    - portId: 98e671f6-0f79-4319-998c-2750594480ff
+      blockId: c328e834-d367-4504-86f9-4d253c21a3cb
+  responsePanelState: open
+  incomingOnSuccessEdges: []

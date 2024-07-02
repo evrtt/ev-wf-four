@@ -1,0 +1,123 @@
+id: not_found_return
+type: datasource
+subtype: JavascriptQuery
+resourceName: JavascriptQuery
+template:
+  ordered:
+    - queryRefreshTime: ''
+    - allowedGroupIds: []
+    - streamResponse: false
+    - lastReceivedFromResourceAt: null
+    - queryDisabledMessage: ''
+    - servedFromCache: false
+    - offlineUserQueryInputs: ''
+    - successMessage: ''
+    - queryDisabled: ''
+    - playgroundQuerySaveId: latest
+    - workflowParams: null
+    - resourceNameOverride: ''
+    - runWhenModelUpdates: false
+    - workflowRunId: null
+    - showFailureToaster: true
+    - query: |-
+        const generateReturn = () => {
+            const status = () => {
+              try {
+                return 400
+              } catch {
+                return 200
+              }
+            }
+          const body = () => {
+            try {
+              return {
+          'msg': 'No Templates Found for Given User'
+        }
+            } catch {
+              return {'error': true, 'messsage': 'there was a problem parsing the JSON body of webhookReturn2'}
+            }
+          }
+          return {status: status(), body: body() }
+          }
+          return generateReturn()
+          
+    - playgroundQueryUuid: ''
+    - playgroundQueryId: null
+    - error: null
+    - workflowRunBodyType: raw
+    - privateParams: []
+    - workflowBlockUuid: null
+    - runWhenPageLoadsDelay: ''
+    - data: null
+    - importedQueryInputs:
+        ordered: []
+    - _additionalScope: []
+    - isImported: false
+    - showSuccessToaster: true
+    - cacheKeyTtl: ''
+    - requestSentTimestamp: null
+    - metadata: null
+    - workflowActionType: null
+    - editorMode: sql
+    - queryRunTime: null
+    - changesetObject: ''
+    - errorTransformer: >-
+        // The variable 'data' allows you to reference the request's data in the
+        transformer. 
+
+        // example: return data.find(element => element.isError)
+
+        return data.error
+    - finished: null
+    - confirmationMessage: null
+    - isFetching: false
+    - changeset: ''
+    - rawData: null
+    - queryTriggerDelay: '0'
+    - resourceTypeOverride: null
+    - watchedParams: []
+    - enableErrorTransformer: false
+    - showLatestVersionUpdatedWarning: false
+    - timestamp: 0
+    - evalType: script
+    - importedQueryDefaults:
+        ordered: []
+    - enableTransformer: false
+    - showUpdateSetValueDynamicallyToggle: true
+    - overrideOrgCacheForUserCache: false
+    - runWhenPageLoads: false
+    - transformer: |-
+        // Query results are available as the `data` variable
+        return data
+    - events: []
+    - queryTimeout: '10000'
+    - workflowId: null
+    - requireConfirmation: false
+    - queryFailureConditions: ''
+    - changesetIsObject: false
+    - enableCaching: false
+    - allowedGroups: []
+    - offlineQueryType: None
+    - queryThrottleTime: '750'
+    - updateSetValueDynamically: false
+    - notificationDuration: ''
+createdAt: 2024-02-13T16:04:23.372Z
+blockData:
+  top: 704
+  left: 4448
+  uuid: db4b795b-de67-4466-9481-2a50c5a2becd
+  options:
+    body: |-
+      {
+        'msg': 'No Templates Found for Given User'
+      }
+    status: '400'
+  pluginId: not_found_return
+  blockType: webhookReturn
+  editorType: JavascriptQuery
+  isMinimized: false
+  resourceName: JavascriptQuery
+  incomingPorts:
+    - portId: 000e0038-2cbb-4515-9873-c0b8d666db19
+      blockId: c328e834-d367-4504-86f9-4d253c21a3cb
+  incomingOnSuccessEdges: []
