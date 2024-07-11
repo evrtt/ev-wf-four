@@ -10,7 +10,7 @@
   >
     <Image
       id="image1"
-      dbBlobId="12e922d0-93b7-4336-96ea-4924bbe77211"
+      dbBlobId="fd324c61-6709-4a15-9b05-243770595c82"
       horizontalAlign="center"
       src="https://picsum.photos/id/1025/800/600"
       srcType="dbBlobId"
