@@ -1,0 +1,26 @@
+<App>
+  <Frame
+    id="$main"
+    enableFullBleed={false}
+    isHiddenOnDesktop={false}
+    isHiddenOnMobile={false}
+    padding="8px 12px"
+    sticky={null}
+    type="main"
+  >
+    <Image
+      id="image1"
+      dbBlobId="12e922d0-93b7-4336-96ea-4924bbe77211"
+      horizontalAlign="center"
+      src="https://picsum.photos/id/1025/800/600"
+      srcType="dbBlobId"
+    />
+    <FileButton
+      id="fileButton1"
+      _isUpgraded={true}
+      iconBefore="bold/programming-browser-search"
+      styleVariant="outline"
+      text="Browse"
+    />
+  </Frame>
+</App>

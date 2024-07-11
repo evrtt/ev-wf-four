@@ -1,0 +1,12 @@
+{
+  "fileButton1": {
+    "row": 2.2,
+    "col": 4,
+    "height": 1,
+    "width": 2
+  },
+  "image1": {
+    "height": 3,
+    "width": 2
+  }
+}
