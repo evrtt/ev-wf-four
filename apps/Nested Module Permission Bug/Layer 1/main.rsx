@@ -19,7 +19,7 @@
         verticalAlign="center"
       />
       <Module
-        id="layer1"
+        id="layer2module"
         name="Layer 2"
         pageUuid="43e8e78c-3ed5-11ef-9597-a3b136b2df22"
       />
