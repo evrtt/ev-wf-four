@@ -13,5 +13,10 @@
       value="## {{retoolContext.configVars.my_config_var}}"
       verticalAlign="center"
     />
+    <Text
+      id="text2"
+      value="## https://{{urlparams.href.split('/')[2] + urlparams.href.split('retool.dev')[1]}}"
+      verticalAlign="center"
+    />
   </Frame>
 </App>
