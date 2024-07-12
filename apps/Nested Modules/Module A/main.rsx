@@ -13,7 +13,12 @@
       backgroundColor="white"
       isGlobalWidgetContainer={true}
     >
-      <Text id="text1" value="## Module A" verticalAlign="center" />
+      <Text
+        id="text1"
+        margin="4px 8px"
+        value="## Module A"
+        verticalAlign="center"
+      />
       <Module
         id="moduleB1"
         name="Module B"
