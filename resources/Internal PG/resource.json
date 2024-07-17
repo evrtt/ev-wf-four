@@ -4,7 +4,7 @@
   "port": "5432",
   "databaseName": "hammerhead_production",
   "databaseUsername": "retool",
-  "databasePassword": "",
+  "databasePassword": "{{retoolContext.environment.postgres_password}}",
   "description": null,
   "outboundRegion": null,
   "ssl": false,
