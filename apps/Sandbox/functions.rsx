@@ -1,9 +1,10 @@
 <GlobalFunctions>
-  <WorkflowRun
+  <SqlQueryUnified
     id="query1"
-    resourceName="WorkflowRun"
+    query={include("./lib/query1.sql", "string")}
+    resourceDisplayName="Internal PG"
+    resourceName="8df91e14-6a16-49f3-8b26-d00463f35b43"
     resourceTypeOverride=""
-    workflowId="d7139e06-7451-44c1-966d-0ce52d69e0ae"
-    workflowParams={include("./lib/query1.json", "string")}
+    warningCodes={[]}
   />
 </GlobalFunctions>
