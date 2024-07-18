@@ -16,3 +16,4 @@
       <Text id="text1" value="## Module C" verticalAlign="center" />
     </ModuleContainerWidget>
   </Frame>
+</App>
