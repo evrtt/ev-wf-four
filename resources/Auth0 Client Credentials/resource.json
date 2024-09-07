@@ -31,7 +31,7 @@
     "oauth2_client_id": "",
     "forwardAllCookies": false,
     "auth0_access_token": "",
-    "auth0_clientSecret": "{{ environment.variables.Auth0_name }}",
+    "auth0_clientSecret": "{{ environment.variables.Auth0_secret }}",
     "extraBodyKeyValues": [["", ""]],
     "verify_session_url": "",
     "oauth1_consumer_key": "",
