@@ -15,7 +15,7 @@
     >
       <Text id="text1" value="## Mod 1" verticalAlign="center" />
       <Module
-        id="mod1"
+        id="mod2"
         name="Mod 2"
         pageUuid="6aadc9f4-7450-11ef-9118-330e512c6b83"
       />
