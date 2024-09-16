@@ -1,0 +1,11 @@
+{
+  "mod1": {
+    "row": 2.4,
+    "height": 2.4,
+    "width": 12
+  },
+  "moduleA1": {
+    "height": 2.4,
+    "width": 12
+  }
+}
